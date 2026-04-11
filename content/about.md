@@ -3,4 +3,6 @@ title: About
 type: about
 ---
 
-This is the about page.
+```js
+const amor = "Alex"
+```

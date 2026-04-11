@@ -1,17 +1,25 @@
 ---
-title: My Site
-toc: false
+title: Entre Páginas
+sidebar:
+  hide: true
 ---
 
-This is the landing page.
+> *"Um leitor vive mil vidas antes de morrer. Aquele que nunca lê vive apenas uma."*
+> — George R.R. Martin
 
-## Explore
+Bem-vindo a este espaço de leitura, crítica e descoberta literária. Aqui, cada página é uma porta.
+
+## Explorar
 
 {{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+  {{< card link="docs" title="Resenhas" icon="book-open" subtitle="Leituras comentadas e análises" >}}
+  {{< card link="about" title="Sobre" icon="user" subtitle="Quem escreve por aqui" >}}
 {{< /cards >}}
 
-## Documentation
+## O que você encontra aqui
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+Resenhas, reflexões sobre livros e autores, listas de leitura e notas de margem — tudo que nasce do hábito de ler com atenção.
+
+---
+
+*Comece por onde quiser. Os livros não têm pressa.*

@@ -1,5 +1,7 @@
 # Hugo configuration file
-title: My Site
+title: Entre Páginas
+defaultContentLanguage: pt
+languageCode: pt
 
 # import hextra as module
 module:
@@ -36,20 +38,27 @@ menu:
       url: "https://github.com/imfing/hextra-starter-template"
       params:
         icon: github
-    - name: Twitter
+    - name: Theme
       weight: 6
-      url: "https://twitter.com/"
       params:
-        icon: x-twitter
-
+        type: theme-toggle
 params:
+  description: "Um espaço entre livros, palavras e pensamentos."
+  imageZoom:
+    enable: true
   navbar:
     displayTitle: true
     displayLogo: false
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    enable: false
+
+  theme:
+    default: dark
+    displayToggle: true
+
+  page:
+    width: normal
 
   editURL:
     enable: true

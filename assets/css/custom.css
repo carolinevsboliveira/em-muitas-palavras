@@ -1,0 +1,285 @@
+/* =============================================
+   Tema Literário — Paleta Rosa & Preto
+   ============================================= */
+
+/* --- Cor primária: rosa vibrante --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-hue: 330deg;
+  --primary-saturation: 75%;
+  --primary-lightness: 45%;
+}
+
+.dark {
+  --primary-hue: 330deg;
+  --primary-saturation: 80%;
+  --primary-lightness: 65%;
+}
+
+/* --- Fundo: branco limpo no modo claro --- */
+body {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* --- Tipografia --- */
+h1, h2, h3, h4, h5, h6 {
+  color: #111111;
+  font-family: "Roboto", "Times New Roman", serif;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  border-bottom: 2px solid #e0407a;
+  padding-bottom: 0.3em;
+}
+
+p, li {
+  font-family: "Roboto Light", "Times New Roman", serif;
+  line-height: 1.85;
+  color: #1a1a1a;
+}
+
+/* --- Navbar --- */
+.hextra-navbar {
+  background-color: #0d0d0d !important;
+  border-bottom: 2px solid #e0407a;
+}
+
+.hextra-navbar a,
+.hextra-navbar span {
+  color: #f5f5f5 !important;
+}
+
+.hextra-navbar a:hover {
+  color: #f472b6 !important;
+}
+
+/* --- Sidebar --- */
+.hextra-sidebar-container {
+  background-color: #fafafa;
+  border-right: 1px solid #f0d0dc;
+}
+
+.hextra-sidebar-container a {
+  color: #111111;
+}
+
+.hextra-sidebar-container a:hover,
+.hextra-sidebar-container a[aria-current="page"] {
+  color: #c0245a;
+  background-color: #fce7f3;
+}
+
+/* --- Cards --- */
+.hextra-card {
+  background-color: #fff0f6;
+  border: 1px solid #f9a8d4;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.hextra-card:hover {
+  box-shadow: 0 4px 16px rgba(192, 36, 90, 0.15);
+  transform: translateY(-2px);
+  border-color: #e0407a;
+  text-decoration: none;
+}
+
+.hextra-card .hextra-card-icon {
+  color: #c0245a;
+}
+
+/* --- Links --- */
+a {
+  color: #c0245a;
+}
+
+a:hover {
+  color: #e0407a;
+  text-decoration: underline;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  border-left: 4px solid #f472b6;
+  background-color: #fff0f6;
+  padding: 1em 1.5em;
+  margin: 1.5em 0;
+  font-style: italic;
+  color: #6b1030;
+  border-radius: 0 4px 4px 0;
+}
+
+blockquote::before {
+  content: "\201C";
+  font-size: 3em;
+  color: #f472b6;
+  line-height: 0;
+  vertical-align: -0.5em;
+  margin-right: 0.1em;
+}
+
+/* --- Código inline --- */
+code {
+  background-color: #ffe4f0;
+  color: #6b1030;
+  border: 1px solid #f9a8d4;
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  font-size: 0.9em;
+}
+
+/* --- Tabelas --- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #111111;
+  color: #f9a8d4;
+  padding: 0.6em 1em;
+}
+
+td {
+  border: 1px solid #f9a8d4;
+  padding: 0.5em 1em;
+  background-color: #ffffff;
+}
+
+tr:nth-child(even) td {
+  background-color: #fff0f6;
+}
+
+/* --- Footer --- */
+.hextra-footer {
+  background-color: #0d0d0d;
+  border-top: 2px solid #e0407a;
+  color: #f9a8d4;
+}
+
+.hextra-footer a {
+  color: #f472b6;
+}
+
+/* --- Separador horizontal --- */
+hr {
+  border: none;
+  border-top: 1px solid #f9a8d4;
+  margin: 2em 0;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f472b6;
+  border-radius: 4px;
+}
+
+/* =============================================
+   MODO ESCURO — Rosa neon & Preto profundo
+   ============================================= */
+
+html.dark body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: #f9a8d4;
+}
+
+html.dark h1 {
+  border-bottom-color: #be185d;
+}
+
+html.dark p,
+html.dark li {
+  color: #e5e5e5;
+}
+
+html.dark .hextra-sidebar-container {
+  background-color: #111111;
+  border-right-color: #3d0020;
+}
+
+html.dark .hextra-sidebar-container a {
+  color: #e5e5e5;
+}
+
+html.dark .hextra-sidebar-container a:hover,
+html.dark .hextra-sidebar-container a[aria-current="page"] {
+  color: #f9a8d4;
+  background-color: #2d0018;
+}
+
+html.dark .hextra-card {
+  background-color: #1a0010;
+  border-color: #be185d;
+}
+
+html.dark .hextra-card:hover {
+  border-color: #f472b6;
+  box-shadow: 0 4px 16px rgba(244, 114, 182, 0.15);
+  text-decoration: none;
+}
+
+html.dark blockquote {
+  background-color: #1a0010;
+  border-left-color: #be185d;
+  color: #f9a8d4;
+}
+
+html.dark code {
+  background-color: #1a0010;
+  color: #f9a8d4;
+  border-color: #be185d;
+}
+
+html.dark a {
+  color: #f472b6;
+}
+
+html.dark a:hover {
+  color: #fda4cf;
+}
+
+html.dark td {
+  border-color: #3d0020;
+  background-color: #0a0a0a;
+}
+
+html.dark tr:nth-child(even) td {
+  background-color: #140008;
+}
+
+html.dark th {
+  background-color: #2d0018;
+  color: #f9a8d4;
+}
+
+html.dark hr {
+  border-top-color: #3d0020;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #be185d;
+}
