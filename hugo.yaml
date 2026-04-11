@@ -30,8 +30,11 @@ menu:
       weight: 3
       params:
         type: search
-    - name: Theme
+    - name: GitHub
       weight: 4
+      url: "https://github.com/carolinevsboliveira/em-muitas-palavras"
+    - name: Theme
+      weight: 5
       params:
         type: theme-toggle
 params:
