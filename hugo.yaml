@@ -47,8 +47,14 @@ params:
   imageZoom:
     enable: true
   navbar:
-    displayTitle: true
-    displayLogo: false
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/logo.svg
+      dark: images/logo-dark.svg
+      link: /
+      width: 176
+      height: 32
 
   footer:
     enable: false
