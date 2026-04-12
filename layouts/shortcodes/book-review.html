@@ -5,7 +5,8 @@
 {{- $year          := .Get "year" -}}
 {{- $pages         := .Get "pages" -}}
 {{- $review_url    := .Get "review_url" -}}
-{{- $review_status := .Get "review_status" -}}
+{{- $review_status  := .Get "review_status" -}}
+{{- $reading_status := .Get "reading_status" -}}
 
 <div class="book-review">
   {{- with $title }}
@@ -35,7 +36,9 @@
     </div>
     {{- end }}
 
-    {{- if $review_url }}
+    {{- if eq $reading_status "progress" }}
+    <span class="badge-reading-progress">Leitura em progresso</span>
+    {{- else if $review_url }}
     <a href="{{ $review_url }}" class="badge-reviewed">Resenhado ↗</a>
     {{- else if eq $review_status "progress" }}
     <span class="badge-review-progress">Resenha em progresso</span>
