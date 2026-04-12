@@ -1,5 +1,7 @@
 {{- $read := .Get "read" | default "0" -}}
 {{- $reviews := .Get "reviews" | default "0" -}}
+{{- $reading := .Get "reading" | default "" -}}
+{{- $author := .Get "author" | default "" -}}
 <style>
 
     .rd-grid {
@@ -98,5 +100,21 @@
             </div>
         </div>
     </div>
+
+    {{- if $reading }}
+    <div class="rd-card rd-bg-rosa">
+        <div class="rd-info">
+            <img src="https://d3hrhzblwmwwnw.cloudfront.net/ilustrations/lendo.png" class="rounded-image"
+                 width="120px"/>
+            <div class="rd-info-text">
+                <span class="rd-number" style="font-size: 1.2rem; color: #6b1030;">{{ $reading }}</span>
+                {{- if $author }}
+                <span class="rd-label" style="font-size: 0.8rem;">{{ $author }}</span>
+                {{- end }}
+                <span class="rd-label">Leitura em progresso</span>
+            </div>
+        </div>
+    </div>
+    {{- end }}
 
 </div>
