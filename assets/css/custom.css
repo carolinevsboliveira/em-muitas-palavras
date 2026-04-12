@@ -477,6 +477,26 @@ html.dark .badge-review-progress {
   border-color: #5a3545;
 }
 
+/* --- H3 clicável nos steps (tem resenha linkada) --- */
+.hextra-steps h3 a {
+  color: #c2185b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.hextra-steps h3 a:hover {
+  color: #880e4f;
+  text-decoration: underline;
+}
+
+html.dark .hextra-steps h3 a {
+  color: #f48fb1;
+}
+
+html.dark .hextra-steps h3 a:hover {
+  color: #fce4ec;
+}
+
 /* --- Steps --- */
 .hextra-steps :where(h2, h3, h4, h5, h6):not(.no-step-marker)::before {
   background-color: #3d0020 !important;
