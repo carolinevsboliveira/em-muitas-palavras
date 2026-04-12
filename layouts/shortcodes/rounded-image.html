@@ -1,0 +1,4 @@
+{{- $file_name := .Get "file" | default "default.png" -}}
+{{- $w := .Get "width" | default "300" -}}
+
+<img src='{{ printf "https://d3hrhzblwmwwnw.cloudfront.net/ilustrations/%s" $file_name }}' width="{{ $w }}" class="responsive-image rounded-image" />

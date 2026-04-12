@@ -8,22 +8,26 @@ sidebar:
 > *"Um leitor vive mil vidas antes de morrer. Aquele que nunca lê vive apenas uma."*
 > — George R.R. Martin
 > 
-<img src="https://d3hrhzblwmwwnw.cloudfront.net/ilustrations/leitora.webp" class="responsive-image"/>
+<img src="https://d3hrhzblwmwwnw.cloudfront.net/ilustrations/leitora.webp" class="responsive-image" />
+
+Bem vindo a esse espaço levemente organizado que guarda os pensamentos e sentimentos de uma leitora. As resenhas por aqui podem ser um pouco longas, um pequeno contraponto a um mundo cada vez mais acelerado.
+
+Por aqui você encontra análises não profissionais de livros — com e sem spoiler — escritas por alguém que lê por curiosidade e terapia. Sem fórmula de crítica literária, apenas uma resenha sincera e para documentar o quanto os livros podem ser transformadores.
+Aqui serão abordados e documentados o que os livros provocam, os personagens favoritos, as perguntas em aberto, os sentimentos causados e como uma história pode mudar a forma de enxergar uma situação cotidiana.
 
 
-Bem-vindo a este espaço de leitura, crítica e descoberta literária. Aqui, cada página é uma porta.
-
-## Explorar
+## Páginas por aqui
 
 {{< cards >}}
   {{< card link="resenhas" title="Resenhas" icon="book-open" subtitle="Leituras comentadas e análises" >}}
-  {{< card link="about" title="Sobre" icon="user" subtitle="Quem escreve por aqui" >}}
+  {{< card link="sobre" title=" Sobre" icon="user" subtitle="Quem escreve por aqui" >}}
+  {{< card link="livros-lidos" title="Livros" icon="book-open" subtitle="Livros que já foram lidos" >}}
 {{< /cards >}}
 
-## O que você encontra aqui
+## Estatísticas
 
-Resenhas, reflexões sobre livros e autores, listas de leitura e notas de margem — tudo que nasce do hábito de ler com atenção.
+{{< stats read="6" reviews="2" >}}
 
 ---
 
-*Comece por onde quiser. Os livros não têm pressa.*
+📚 *Comece por onde quiser. Os livros não têm pressa.*

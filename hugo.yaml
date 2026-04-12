@@ -26,9 +26,12 @@ menu:
     - name: Resenhas
       pageRef: /resenhas
       weight: 1
+    - name: Livros Lidos
+      pageRef: /livros-lidos
+      weight: 2
     - name: Sobre
       pageRef: /sobre
-      weight: 2
+      weight: 3
     - name: Search
       weight: 3
       params:
@@ -38,8 +41,13 @@ menu:
       url: "https://github.com/carolinevsboliveira/em-muitas-palavras"
       params:
         icon: github
-    - name: Theme
+    - name: Linkedin
       weight: 5
+      url: "https://www.linkedin.com/in/caroline-s-b-oliveira/"
+      params:
+        icon: linkedin
+    - name: Theme
+      weight: 6
       params:
         type: theme-toggle
 params:
