@@ -1,0 +1,36 @@
+{{- $title     := .Get "title" -}}
+{{- $author    := .Get "author" -}}
+{{- $text      := .Get "text" -}}
+{{- $publisher := .Get "publisher" -}}
+{{- $year      := .Get "year" -}}
+{{- $pages     := .Get "pages" -}}
+
+<div class="book-review">
+  {{- with $title }}
+  <h3 class="book-review-title">
+    {{ . }}{{ with $author }} — {{ . }}{{ end }}
+  </h3>
+  {{- end }}
+
+  {{- with $text }}
+  <p class="book-review-text">{{ . }}</p>
+  {{- end }}
+
+  <div class="book-review-badges">
+    {{- with $publisher }}
+    <div class="hextra-badge">
+      <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:border-purple-200 hx:bg-purple-100 hx:text-purple-900 hx:dark:border-purple-200/30 hx:dark:bg-purple-900/30 hx:dark:text-purple-200">Editora: {{ . }}</div>
+    </div>
+    {{- end }}
+
+    {{- with $year }}
+    <span class="hextra-pink-badge">{{ . }}</span>
+    {{- end }}
+
+    {{- with $pages }}
+    <div class="hextra-badge">
+      <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">{{ . }} páginas</div>
+    </div>
+    {{- end }}
+  </div>
+</div>

@@ -1,0 +1,102 @@
+{{- $read := .Get "read" | default "0" -}}
+{{- $reviews := .Get "reviews" | default "0" -}}
+<style>
+
+    .rd-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 15px;
+        padding-top: 12px
+    }
+
+    .rd-card {
+        padding: 25px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        min-height: 120px;
+    }
+
+    /* Cores Flat */
+    .rd-bg-vinho {
+        border: #f472b6 2px solid;
+        border-radius: 15px;
+    }
+
+    .rd-bg-rosa {
+        border: #3d0020 2px solid;
+        border-radius: 15px;
+    }
+
+    /* Texto vinho no fundo rosa para melhor contraste */
+
+    .rd-info {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .rd-info-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .rd-number {
+        font-size: 2rem;
+        font-weight: 900;
+        line-height: 1;
+        color: #be185d;
+        font-family: "Playwrite IE", cursive;
+    }
+
+    .rd-label {
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-top: 4px;
+        color: #6b1030;
+        font-family: "Playwrite IE", cursive;
+    }
+
+    html.dark .rd-number {
+        color: #f472b6;
+    }
+
+    html.dark .rd-label {
+        color: #f9a8d4;
+    }
+
+    @media (max-width: 500px) {
+        .rd-card {
+            padding: 20px;
+        }
+    }
+</style>
+
+<div class="rd-grid">
+    <div class="rd-card rd-bg-rosa">
+
+        <div class="rd-info">
+            <img src="https://d3hrhzblwmwwnw.cloudfront.net/ilustrations/lendo.png" class="rounded-image"
+                 width="120px"/>
+            <div class="rd-info-text">
+                <span class="rd-number">{{ $read }}</span>
+                <span class="rd-label">Livros Lidos em 2026</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="rd-card rd-bg-rosa">
+        <div class="rd-info">
+            <img src="https://d3hrhzblwmwwnw.cloudfront.net/ilustrations/escrevendo.png" class="rounded-image"
+                 width="120px"/>
+            <div class="rd-info-text">
+                <span class="rd-number">{{ $reviews }}</span>
+                <span class="rd-label">Resenhas em progresso</span>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,6 @@
+{{- $content := .Get "content" | default (.Get 0) -}}
+{{- $icon := .Get "icon" | default "" -}}
+<span class="hextra-pink-badge">
+  {{- with $icon -}}{{- partial "utils/icon" (dict "name" . "attributes" "height=12") -}}{{- end -}}
+  {{- $content -}}
+</span>
