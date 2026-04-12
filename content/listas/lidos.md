@@ -30,24 +30,32 @@ weight: 1
 
 {{< book-review
   publisher="Literatura Clássica"
+  year="2025"
+  pages="344"
 >}}
 
 ### Nós — Yevgeny Zamiátin
 
 {{< book-review
   publisher="Literatura Clássica"
+  year="2026"
+  pages="194"
 >}}
 
 ### A Metamorfose — Franz Kafka
 
 {{< book-review
-  publisher="Literatura Clássica"
+  publisher="Principis"
+  year="2019"
+  pages="96"
 >}}
 
 ### O Retrato de Dorian Gray — Oscar Wilde
 
 {{< book-review
-  publisher="Literatura Clássica"
+  publisher="DarkSide"
+  year="2021"
+  pages="320"
 >}}
 
 {{% /steps %}}
