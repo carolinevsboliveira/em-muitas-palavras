@@ -1,9 +1,11 @@
-{{- $title     := .Get "title" -}}
-{{- $author    := .Get "author" -}}
-{{- $text      := .Get "text" -}}
-{{- $publisher := .Get "publisher" -}}
-{{- $year      := .Get "year" -}}
-{{- $pages     := .Get "pages" -}}
+{{- $title         := .Get "title" -}}
+{{- $author        := .Get "author" -}}
+{{- $text          := .Get "text" -}}
+{{- $publisher     := .Get "publisher" -}}
+{{- $year          := .Get "year" -}}
+{{- $pages         := .Get "pages" -}}
+{{- $review_url    := .Get "review_url" -}}
+{{- $review_status := .Get "review_status" -}}
 
 <div class="book-review">
   {{- with $title }}
@@ -31,6 +33,12 @@
     <div class="hextra-badge">
       <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200">{{ . }} páginas</div>
     </div>
+    {{- end }}
+
+    {{- if $review_url }}
+    <a href="{{ $review_url }}" class="badge-reviewed">Resenhado ↗</a>
+    {{- else if eq $review_status "progress" }}
+    <span class="badge-review-progress">Resenha em progresso</span>
     {{- end }}
   </div>
 </div>
