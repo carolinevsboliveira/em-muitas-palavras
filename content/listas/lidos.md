@@ -4,27 +4,50 @@ type: docs
 weight: 1
 ---
 
-
-{{< building >}}
-
----
-
 # 2026
 
 {{% steps %}}
 
-### O Idiota - Dostoiévski
-Uma leitura empolgante e fluida. Li em janeiro desse ano e ainda penso em Nastasya Filippovna.
+### O Idiota — Dostoiévski
 
-{{< badge content="Editora: Literatura clássica" color="purple" >}}
-{{< pink-badge content="2024" >}}
-{{< badge content="605 páginas" color="blue" >}}
+{{< book-review
+  text="Uma leitura empolgante e fluida. Li em janeiro desse ano e ainda penso em Nastasya Filippovna."
+  publisher="Literatura Clássica"
+  year="2024"
+  pages="605"
+>}}
 
-### Noites brancas - Dostoiévski
-Existe algo na qual Nástienka possa ser culpada? Além disso, é possível lidar com a solidão na qual o sonhador estava imerso?
+### Noites Brancas — Dostoiévski
 
-{{< badge content="Editora: Literatura clássica" color="purple" >}}
-{{< pink-badge content="2024" >}}
-{{< badge content="79 (dolorosas) páginas" color="blue" >}}
+{{< book-review
+  text="Existe algo na qual Nástienka possa ser culpada? Além disso, é possível lidar com a solidão na qual o sonhador estava imerso?"
+  publisher="Literatura Clássica"
+  year="2024"
+  pages="79 (dolorosas)"
+>}}
+
+### Orgulho e Preconceito — Jane Austen
+
+{{< book-review
+  publisher="Literatura Clássica"
+>}}
+
+### Nós — Yevgeny Zamiátin
+
+{{< book-review
+  publisher="Literatura Clássica"
+>}}
+
+### A Metamorfose — Franz Kafka
+
+{{< book-review
+  publisher="Literatura Clássica"
+>}}
+
+### O Retrato de Dorian Gray — Oscar Wilde
+
+{{< book-review
+  publisher="Literatura Clássica"
+>}}
 
 {{% /steps %}}

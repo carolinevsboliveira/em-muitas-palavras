@@ -21,7 +21,7 @@ Aqui serão abordados e documentados o que os livros provocam, os personagens fa
 {{< cards >}}
   {{< card link="resenhas" title="Resenhas" icon="book-open" subtitle="Leituras comentadas e análises" >}}
   {{< card link="sobre" title=" Sobre" icon="user" subtitle="Quem escreve por aqui" >}}
-  {{< card link="livros-lidos" title="Livros" icon="book-open" subtitle="Livros que já foram lidos" >}}
+  {{< card link="/listas/lidos" title="Livros" icon="book-open" subtitle="Livros que já foram lidos" >}}
 {{< /cards >}}
 
 ## Estatísticas
