@@ -477,6 +477,29 @@ html.dark .badge-review-progress {
   border-color: #5a3545;
 }
 
+/* --- Badge Leitura em progresso --- */
+.badge-reading-progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 9999px;
+  padding: 0 0.625rem;
+  line-height: 1.5rem;
+  font-size: 0.65rem;
+  font-weight: 500;
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+  vertical-align: middle;
+}
+
+/* --- Dark mode: badge Leitura em progresso --- */
+html.dark .badge-reading-progress {
+  background-color: #022c22;
+  color: #6ee7b7;
+  border-color: #065f46;
+}
+
 /* --- H3 clicável nos steps (tem resenha linkada) --- */
 .hextra-steps h3 a {
   color: #c2185b;
