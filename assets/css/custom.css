@@ -416,6 +416,67 @@ html.dark .hextra-navbar {
   vertical-align: middle;
 }
 
+/* --- Badge Resenhado (link para resenha disponível) --- */
+.badge-reviewed {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 9999px;
+  padding: 0 0.625rem;
+  line-height: 1.5rem;
+  font-size: 0.65rem;
+  font-family: "Quicksand", sans-serif;
+  background-color: #fce7f3;
+  color: #9d174d;
+  border: 1px solid #f9a8d4;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  vertical-align: middle;
+}
+
+.badge-reviewed:hover {
+  background-color: #fbcfe8;
+  border-color: #ec4899;
+  color: #831843;
+  text-decoration: none;
+}
+
+/* --- Badge Resenha em progresso --- */
+.badge-review-progress {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 9999px;
+  padding: 0 0.625rem;
+  line-height: 1.5rem;
+  font-size: 0.65rem;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f5f0f2;
+  color: #7a5060;
+  border: 1px solid #d4b8c2;
+  vertical-align: middle;
+}
+
+/* --- Dark mode: badge Resenhado --- */
+html.dark .badge-reviewed {
+  background-color: #4a0028;
+  color: #f9a8d4;
+  border-color: #be185d;
+}
+
+html.dark .badge-reviewed:hover {
+  background-color: #6b1030;
+  border-color: #f472b6;
+  color: #fce7f3;
+}
+
+/* --- Dark mode: badge Resenha em progresso --- */
+html.dark .badge-review-progress {
+  background-color: #1e1015;
+  color: #c09aaa;
+  border-color: #5a3545;
+}
+
 /* --- Steps --- */
 .hextra-steps :where(h2, h3, h4, h5, h6):not(.no-step-marker)::before {
   background-color: #3d0020 !important;
