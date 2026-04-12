@@ -26,7 +26,7 @@ Aqui serão abordados e documentados o que os livros provocam, os personagens fa
 
 ## Estatísticas
 
-{{< stats read="6" reviews="2" reading="Morro dos ventos uivantes" author="Emily Brontë" >}}
+{{< stats reviews="2" reading="Morro dos ventos uivantes" author="Emily Brontë" >}}
 
 ---
 
