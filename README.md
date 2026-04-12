@@ -1,15 +1,46 @@
-# Hextra Starter Template
+# Em muitas palavras
 
-[![Deploy Hugo site to Pages](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml/badge.svg)](https://github.com/imfing/hextra-starter-template/actions/workflows/pages.yaml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6e83fd88-5ffe-4808-9689-c0f3b100bfe3/deploy-status)](https://app.netlify.com/sites/hextra-starter-template/deploys)
-![Vercel Deployment Status](https://img.shields.io/github/deployments/imfing/hextra-starter-template/production?logo=vercel&logoColor=white&label=vercel&labelColor=black&link=https%3A%2F%2Fhextra-starter-template.vercel.app%2F)
+Um blog estático de resenhas de livros construído com Hugo e Hextra, com deploy automático via GitHub Pages.
 
+> *"Um leitor vive mil vidas antes de morrer. Aquele que nunca lê vive apenas uma."* — George R.R. Martin
 
-🐣 Minimal template for getting started with [Hextra](https://github.com/imfing/hextra)
+## ✨ Funcionalidades
 
-![hextra-template](https://github.com/imfing/hextra-starter-template/assets/5097752/c403b9a9-a76c-47a6-8466-513d772ef0b7)
+- 📚 **Resenhas comentadas** — análises não profissionais de livros lidos
+- 📊 **Estatísticas dinâmicas** — cards com livros lidos, resenhas em progresso e leituras atuais
+- 🔖 **Badges de resenha** — indicadores visuais de status e sentimento das leituras
+- 🌙 **Dark mode** — tema escuro integrado
+- 🔍 **Busca integrada** — busca por títulos, autores e conteúdo
+- ⚡ **Zero servidor** — conteúdo como código, versionado no Git
+- 🚀 **Deploy automático** — atualiza com cada push via GitHub Actions
 
-[🌐 Demo ↗](https://imfing.github.io/hextra-starter-template/)
+## Começar a usar
+
+### Adicionar um novo card de leitura em progresso
+
+Para adicionar um livro que está sendo lido atualmente, edite `content/_index.md` e atualize o shortcode `stats`:
+
+```markdown
+{{< stats read="6" reviews="2" reading="Título do Livro" author="Nome do Autor" >}}
+```
+
+- `read`: número de livros lidos em 2026
+- `reviews`: número de resenhas em progresso
+- `reading`: título do livro em leitura
+- `author`: nome do autor
+
+### Estrutura de resenhas
+
+As resenhas ficam em `content/resenhas/` e são organizadas por livro:
+
+```
+content/resenhas/
+├── livro1/
+│   ├── _index.md (informações do livro)
+│   └── resenha.md (conteúdo da resenha)
+└── livro2/
+    └── _index.md
+```
 
 ## Quick Start
 
