@@ -42,7 +42,7 @@ weight: 1
   pages="194"
 >}}
 
-### A Metamorfose — Franz Kafka
+### [A Metamorfose — Franz Kafka](/resenhas/classicos/a-metamorfose)
 
 {{< book-review
   publisher="Principis"
