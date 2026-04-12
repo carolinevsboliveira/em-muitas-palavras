@@ -48,6 +48,8 @@ weight: 1
   publisher="Principis"
   year="2019"
   pages="96"
+  review_url="/resenhas/classicos/a-metamorfose"
+  review_status="progress"
 >}}
 
 ### O Retrato de Dorian Gray — Oscar Wilde
