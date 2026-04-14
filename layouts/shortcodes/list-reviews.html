@@ -1,0 +1,13 @@
+{{- $resenhas := where .Site.RegularPages "Section" "resenhas" -}}
+{{- if $resenhas -}}
+<div class="review-list">
+  {{- range $resenhas.ByTitle -}}
+  <a href="{{ .RelPermalink }}" class="review-list-item">
+    <span class="review-list-title">{{ .Title }}</span>
+    {{- if .Date }}<span class="review-list-date">{{ .Date.Format "02/01/2006" }}</span>{{ end -}}
+  </a>
+  {{- end -}}
+</div>
+{{- else -}}
+<p>Nenhuma resenha encontrada.</p>
+{{- end -}}

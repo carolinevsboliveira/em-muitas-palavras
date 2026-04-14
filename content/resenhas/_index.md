@@ -5,4 +5,4 @@ sidebar:
   open: true
 ---
 
-{{< building >}}
+{{< list-reviews >}}
