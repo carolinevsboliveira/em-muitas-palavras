@@ -1,0 +1,9 @@
+<script>
+// Adiciona classe 'is-review' se a página está em /resenhas/
+(function() {
+  const path = window.location.pathname;
+  if (path.includes('/resenhas/')) {
+    document.documentElement.classList.add('is-review');
+  }
+})();
+</script>

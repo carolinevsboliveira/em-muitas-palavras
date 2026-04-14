@@ -525,10 +525,32 @@ html.dark .hextra-steps h3 a:hover {
   background-color: #3d0020 !important;
   color: #f472b6 !important;
   border-color: #fce7f3 !important;
+  border-color: #fce7f3 !important;
 }
 
 html.dark .hextra-steps :where(h2, h3, h4, h5, h6):not(.no-step-marker)::before {
   background-color: #3d0020 !important;
   color: #f472b6 !important;
   border-color: #0a0a0a !important;
+}
+
+p {
+  text-indent: 2em;
+}
+
+/* --- TOC Hierárquico com Recuo (apenas em resenhas) --- */
+/* Seleciona apenas páginas com a classe 'is-review' */
+.is-review .hextra-toc li > a[class*="ltr:pl-4"],
+.is-review .hextra-toc li > a[class*="rtl:pr-4"] {
+  display: block !important;
+  margin-left: 1rem !important;
+  padding-left: 0.75rem !important;
+  border-left: 2px solid #f472b6;
+  position: relative;
+  font-weight: 500;
+}
+
+html.dark .is-review .hextra-toc li > a[class*="ltr:pl-4"],
+html.dark .is-review .hextra-toc li > a[class*="rtl:pr-4"] {
+  border-left-color: #f9a8d4;
 }
