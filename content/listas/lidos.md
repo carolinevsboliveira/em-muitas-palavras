@@ -55,9 +55,11 @@ weight: 1
 ### O Retrato de Dorian Gray — Oscar Wilde
 
 {{< book-review
+  text="É possível escapar do envenenamento da alma?"
   publisher="DarkSide"
   year="2021"
   pages="320"
+  review_url="/resenhas/classicos/o-retrato-de-dorian-gray"
 >}}
 
 ### Morro dos Ventos Uivantes — Emily Brontë

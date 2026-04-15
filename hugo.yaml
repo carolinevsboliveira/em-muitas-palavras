@@ -27,7 +27,7 @@ menu:
       pageRef: /resenhas
       weight: 1
     - name: Livros Lidos
-      pageRef: /livros-lidos
+      pageRef: /listas/lidos/
       weight: 2
     - name: Sobre
       pageRef: /sobre
