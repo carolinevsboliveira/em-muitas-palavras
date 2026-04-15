@@ -52,13 +52,14 @@ weight: 1
   review_status="progress"
 >}}
 
-### O Retrato de Dorian Gray — Oscar Wilde
+### [O Retrato de Dorian Gray — Oscar Wilde](/resenhas/classicos/o-retrato-de-dorian-gray)
 
 {{< book-review
-  text="É possível escapar do envenenamento da alma?"
+  text="É possível escapar do envenenamento da alma? Até onde somos puros? Até onde somos belos?"
   publisher="DarkSide"
   year="2021"
   pages="320"
+  review_status="progress"
   review_url="/resenhas/classicos/o-retrato-de-dorian-gray"
 >}}
 
