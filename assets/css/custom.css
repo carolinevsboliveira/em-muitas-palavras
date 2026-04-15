@@ -538,9 +538,10 @@ p {
   text-indent: 2em;
 }
 
-/* --- TOC Hierárquico com Recuo (apenas em resenhas) --- */
-/* Usa seletor estrutural (ul ul) para não depender de classes do Tailwind */
-.is-review .hextra-toc ul ul li > a {
+/* --- TOC Hierárquico com Recuo (h3 e abaixo) --- */
+/* Seleciona h3 (e outros níveis abaixo) no TOC via classes de padding */
+.hextra-toc li > a[class*="ltr:pl-4"],
+.hextra-toc li > a[class*="rtl:pr-4"] {
   display: block !important;
   margin-left: 1rem !important;
   padding-left: 0.75rem !important;
@@ -549,11 +550,12 @@ p {
   font-weight: 500;
 }
 
-html.dark .is-review .hextra-toc ul ul li > a {
+html.dark .hextra-toc li > a[class*="ltr:pl-4"],
+html.dark .hextra-toc li > a[class*="rtl:pr-4"] {
   border-left-color: #f9a8d4;
 }
 
-/* --- Lista de Resenhas (/resenhas) --- */
+/* --- Review List Cards --- */
 .review-list {
   display: flex;
   flex-direction: column;
