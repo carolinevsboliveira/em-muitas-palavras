@@ -1,5 +1,5 @@
 ---
-title: "O Retrato de Dorian Gray — "
+title: "O Retrato de Dorian Gray — Oscar Wilde"
 type: docs
 sidebar:
   open: true
