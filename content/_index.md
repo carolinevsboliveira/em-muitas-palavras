@@ -26,7 +26,7 @@ Aqui serão abordados e documentados o que os livros provocam, os personagens fa
 
 ## Estatísticas
 
-{{< stats reviews="1" reading="Arrastados" author="Arrastados" >}}
+{{< stats reviews="1" reading="Arrastados" author="Arbex" >}}
 
 ---
 
