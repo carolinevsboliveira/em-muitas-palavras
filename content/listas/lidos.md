@@ -66,7 +66,10 @@ weight: 1
 ### Morro dos Ventos Uivantes — Emily Brontë
 
 {{< book-review
-  reading_status="progress"
+  text="O quanto um ambiente de rejeição pode nos transformar em pessoas mesquinhas e vingativas?"
+  publisher="Principis"
+  year="2025"
+  pages="384"
 >}}
 
 {{% /steps %}}
